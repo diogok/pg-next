@@ -1,5 +1,4 @@
 target
-pom.xml
 *.swp
 *~
 .cpcache
