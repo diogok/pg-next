@@ -1,0 +1,20 @@
+{:paths ["src"]
+ :deps 
+ {
+  org.clojure/clojure {:mvn/version "1.10.1"}
+  seancorfield/next.jdbc {:mvn/version "1.0.13"}
+  com.zaxxer/HikariCP {:mvn/version "3.3.1"}
+  org.postgresql/postgresql {:mvn/version "42.2.5"}
+  cheshire {:mvn/version "5.9.0"}
+  clojure.java-time {:mvn/version "0.3.2"}
+  }
+ :aliases {:repl {:main-opts ["--repl"]}
+           :test {:extra-paths ["test"]
+                  :extra-deps {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
+                                                          :sha "209b64504cb3bd3b99ecfec7937b358a879f55c1"}}
+                  :main-opts ["-m" "cognitect.test-runner"]}
+           }
+ :mvn/repos
+ {"central" {:url "https://repo1.maven.org/maven2/"}
+  "clojars" {:url "https://clojars.org/repo"}}
+ }

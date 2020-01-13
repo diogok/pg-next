@@ -1,0 +1,6 @@
+target
+pom.xml
+*.swp
+*~
+.cpcache
+out
